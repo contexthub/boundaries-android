@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Boundaries</string>
+    <string name="title_activity_geofences_map">Geofences</string>
+    <string name="add_geofence">Add Geofence</string>
+    <string name="map">Map</string>
+    <string name="list">List</string>
+    <string name="create_geofence">Create Geofence</string>
+    <string name="geofence_name">Geofence name</string>
+    <string name="geofence_name_required">Geofence name is required</string>
+    <string name="creating_geofence">Creating geofence...</string>
+    <string name="updating_geofence">Updating geofence...</string>
+    <string name="about">About</string>
+    <string name="about_text">This sample application uses ContextHub to create/retrieve/update/delete geofences on the server and then respond to geofence in and out events. ContextHub takes care of setting up and monitoring geofences automatically after creation and synchronization.</string>
+    <string name="copyright_info">Copyright © 2014 ChaiOne\nAll Rights Reserved</string>
+    <string name="version_info">Version %1$s (%2$s)</string>
+    <string name="contexthub_url">http://contexthub.com</string>
+    <string name="no_geofences">No geofences</string>
+    <string name="confirm_delete_title">Delete geofence</string>
+    <string name="confirm_delete_message">Are you sure you want to delete this geofence?</string>
+    <string name="geofence_deleted">Geofence deleted</string>
+    <string name="latitude_longitude_radius">Latitude: %1$s, Longitude: %2$s, Radius: %3$s</string>
+</resources>
