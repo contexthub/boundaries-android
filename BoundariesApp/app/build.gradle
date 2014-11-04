@@ -7,7 +7,7 @@ repositories {
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.0.1"
+    buildToolsVersion "21.1"
 
     packagingOptions {
         exclude 'META-INF/services/javax.annotation.processing.Processor'
@@ -33,10 +33,10 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.google.android.gms:play-services:6.1.11'
+    compile 'com.google.android.gms:play-services:6.1.71'
     compile 'com.android.support:support-v4:21.0.0'
     compile 'com.jakewharton:butterknife:5.1.2'
     compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
-    compile 'com.chaione:contexthub:1.0.22'
     compile 'org.parceler:parceler:0.2.13'
+    compile 'com.chaione:contexthub:1.0.24'
 }
