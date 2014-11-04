@@ -9,8 +9,6 @@ import com.chaione.contexthub.sdk.ContextHub;
 import com.chaione.contexthub.sdk.model.Geofence;
 import com.contexthub.boundaries.R;
 
-import org.parceler.Parcels;
-
 /**
  * Dialog fragment for updating a geofence
  */
@@ -23,7 +21,7 @@ public class GeofenceUpdateDialogFragment extends GeofenceEditDialogFragment {
     public static GeofenceUpdateDialogFragment newInstance(Geofence geofence) {
         GeofenceUpdateDialogFragment fragment = new GeofenceUpdateDialogFragment();
         Bundle args = new Bundle();
-        args.putParcelable(ARG_GEOFENCE, Parcels.wrap(geofence));
+        args.putParcelable(ARG_GEOFENCE, geofence);
         fragment.setArguments(args);
         return fragment;
     }
@@ -32,7 +30,7 @@ public class GeofenceUpdateDialogFragment extends GeofenceEditDialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         Dialog dialog = super.onCreateDialog(savedInstanceState);
-        geofence = Parcels.unwrap(getArguments().getParcelable(ARG_GEOFENCE));
+        geofence = getArguments().getParcelable(ARG_GEOFENCE);
         geofenceName.setText(geofence.getName());
         return dialog;
     }
