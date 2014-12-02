@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<EditText xmlns:android="http://schemas.android.com/apk/res/android"
-          android:id="@+id/geofence_name"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:hint="@string/geofence_name"/>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="@dimen/activity_vertical_margin"
+             android:paddingLeft="@dimen/dialog_padding"
+             android:paddingRight="@dimen/dialog_padding">
+
+    <EditText
+        android:id="@+id/geofence_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/geofence_name"/>
+
+</FrameLayout>
